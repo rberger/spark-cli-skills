@@ -79,6 +79,16 @@ npx skills add https://github.com/readdle/spark-cli-skills/tree/main/skills/reci
 npx skills add https://github.com/readdle/spark-cli-skills/tree/main/skills/persona-exec-assistant
 ```
 
+### Kiro
+
+[Kiro](https://kiro.dev) installs this repo as a **Power** from the root `plugin.json` manifest, which auto-discovers every skill in `skills/`. The same Power is available to KiroCrew, Kiro's always-on agent.
+
+1. Open the **Powers** panel.
+2. Choose **Add Custom Power → Import from GitHub**.
+3. Enter the repository URL: `https://github.com/readdle/spark-cli-skills`
+
+Kiro reads `use-spark` plus every recipe and persona automatically - no per-skill registration. Activation keywords come from the manifest's `keywords`.
+
 ## License
 
 [MIT](LICENSE) © Spark Mail Limited
